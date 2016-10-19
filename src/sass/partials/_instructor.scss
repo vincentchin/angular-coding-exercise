@@ -1,0 +1,50 @@
+.instructor {
+    @media (max-width: $screen-md) {
+        padding-left: 0;
+    }
+
+    @media (max-width: $screen-sm) {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    img {
+        display: inline-block;
+        margin: 0 15px;
+        vertical-align: top;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        width: 40px;
+        height: 40px;
+
+        @media (max-width: $screen-md) {
+            margin-left: 0;
+            margin-right: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        @media (max-width: $screen-sm) {
+            margin: 0 auto;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        padding-top: 5px;
+
+        @media (max-width: $screen-md) {
+            padding-top: 15px;
+        }
+
+        @media (max-width: $screen-sm) {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+body {
+    background: #f7f7fa;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+#main {
+    width: 100%;
+    max-width: 1080px;
+
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #666666;
+        margin: 25px auto 10px;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0 auto;
+        color: #666666;
+    }
+
+    section {
+        margin: 0 auto;
+
+        .channel {
+            background: #ffffff;
+            border: 1px solid #ebebee;
+            padding: 20px;
+        }
+    }
+}

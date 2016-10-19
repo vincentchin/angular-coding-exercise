@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Channels Listing</title>
+    <style type="text/css">
+        /* Hack to force cloak */
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+          display: none !important;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+</head>
+
+<body ng-controller="AppController as App" ng-cloak>
+    <main class="container" id="main">
+        <section class="col-xs-12" ng-repeat="channels in App.channels | orderBy: 'index' ">
+            <h1>{{ channels.index }}</h1>
+                <div class="channel col-xs-12" ng-repeat="channel in channels.group | orderBy: 'time' ">
+                    <div class="col-xs-12 col-sm-2 course-icon">
+                        <img ng-src="{{ channel.subjectPhotoUrl }}" />
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-md-5 course">
+                        <h2>{{ channel.title }}</h2>
+                        <p>{{ channel.description }}</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 instructor">
+                        <img ng-src="{{ channel.instructorPhotoUrl }}" />
+                        <h3>{{ channel.instructorName }}</h3>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 timeslot">
+                        <h3>{{ channel.timeslot }}</h3>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>

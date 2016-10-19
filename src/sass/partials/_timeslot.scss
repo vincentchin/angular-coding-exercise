@@ -1,0 +1,14 @@
+.timeslot {
+    padding-top: 5px;
+
+    @media (max-width: $screen-md) {
+        padding: 15px 0;
+    }
+
+    @media (max-width: $screen-sm) {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

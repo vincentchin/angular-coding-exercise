@@ -1,0 +1,48 @@
+.course-icon {
+    padding: 0;
+    width: 65px;
+
+    @media (max-width: $screen-sm) {
+        width: 100%;
+    }
+
+    img {
+        display: inline-block;
+        margin: 0 15px;
+        vertical-align: top;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        width: 40px;
+        height: 40px;
+
+        @media (max-width: $screen-md) {
+            margin-left: 0;
+            margin-right: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        @media (max-width: $screen-sm) {
+            margin: 15px auto;
+            display: block;
+        }
+    }
+}
+
+.course {
+    padding-top: 5px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0px auto 10px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #333333;
+    }
+}

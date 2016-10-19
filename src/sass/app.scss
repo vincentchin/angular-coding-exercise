@@ -1,0 +1,12 @@
+// Variables
+$screen-sm: 768px;
+$screen-md: 992px;
+
+// Vendor
+@import "vendor/bootstrap";
+
+// Import partials
+@import "partials/base";
+@import "partials/course";
+@import "partials/instructor";
+@import "partials/timeslot";

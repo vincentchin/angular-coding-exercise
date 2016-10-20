@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
 </head>
 
-<body ng-controller="AppController as App" ng-cloak>
+<body ng-controller="AppController as app" ng-cloak>
     <main class="container" id="main">
-        <section class="col-xs-12" ng-repeat="channels in App.channels | orderBy: 'index' ">
+        <section class="col-xs-12" ng-repeat="channels in app.channels | orderBy: 'index' ">
             <h1>{{ channels.index }}</h1>
                 <div class="channel col-xs-12" ng-repeat="channel in channels.group | orderBy: 'time' ">
                     <div class="col-xs-12 col-sm-2 course-icon">

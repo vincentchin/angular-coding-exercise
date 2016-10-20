@@ -3,12 +3,12 @@ var path = require('path');
 module.exports = {
 
   // set the context (optional)
-  context: path.join( __dirname, '/src'),
-  entry: 'index.js',
+  context: path.join( __dirname, '/app'),
+  entry: 'app.module.js',
 
   // enable loading modules relatively (without the ../../ prefix)
   resolve: {
-    root: path.join( __dirname, '/src')
+    root: path.join( __dirname, '/app')
   },
 
   module: {
@@ -28,7 +28,7 @@ module.exports = {
 
   // webpack dev server configuration
   devServer: {
-    contentBase: "./src",
+    contentBase: "./app",
     noInfo: false,
     hot: true
   },

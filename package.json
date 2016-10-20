@@ -2,11 +2,11 @@
   "name": "angular-coding-exercise",
   "version": "",
   "description": "Coding exercise",
-  "main": "index.js",
+  "main": "app.module.js",
   "scripts": {
     "prestart": "npm install",
     "start": "webpack-dev-server",
-    "bundle": "cp src/index.html dist/ & webpack -p ./dist/bundle.js"
+    "bundle": "cp app/index.html dist/ & webpack -p ./dist/bundle.js"
   },
   "author": "Vincent Chin",
   "license": "MIT",
